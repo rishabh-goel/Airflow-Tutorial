@@ -1,0 +1,14 @@
+// 1. used for python_dependency_dag.py
+// command to build external dependencies into the docker image
+docker build . --tag extending_airflow:latest
+
+// build new image
+docker-compose up -d --no-deps --build airflow-webserver airflow-scheduler
+
+
+// 2. used for minio_s3_dag.py
+// youtube link
+https://www.youtube.com/watch?v=vuxrhipJMCk&list=PLwFJcsJ61oujAqYpMp1kdUBcPG0sE0QMT&index=13
+
+// command to setup minio console either from youtube or if found in minio docs
+
